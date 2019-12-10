@@ -1092,6 +1092,8 @@ GameObject:
   - component: {fileID: 1302325715}
   - component: {fileID: 1302325714}
   - component: {fileID: 1302325713}
+  - component: {fileID: 1302325717}
+  - component: {fileID: 1302325718}
   m_Layer: 0
   m_Name: charLeif
   m_TagString: Untagged
@@ -1210,6 +1212,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1302325717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302325712}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657c8d48783bf19478edb2745729c063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rndMove: 0
+  speed: 0
+--- !u!114 &1302325718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302325712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d45439a9186fc419e3b8009cfc5b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldLerp: 0
+  timeStartedLerping: 0
+  lerpTime: 0
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
+  charLeif: {fileID: 0}
 --- !u!1 &1320032067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1350,7 @@ GameObject:
   - component: {fileID: 1353146824}
   - component: {fileID: 1353146823}
   - component: {fileID: 1353146822}
+  - component: {fileID: 1353146826}
   m_Layer: 0
   m_Name: charPriest
   m_TagString: Untagged
@@ -1407,7 +1442,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0059656426, y: -0.0022389293}
+  m_Offset: {x: 0.0059656426, y: -0.2018131}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1418,7 +1453,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24862917, y: 0.40314233}
+  m_Size: {x: 0.24862917, y: 0.004077241}
   m_EdgeRadius: 0
 --- !u!4 &1353146825
 Transform:
@@ -1428,12 +1463,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353146821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.62, y: -2.62, z: 15.59}
+  m_LocalPosition: {x: -2.91, y: -2.62, z: 15.59}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353146826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353146821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657c8d48783bf19478edb2745729c063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rndMove: 0
+  speed: 0
 --- !u!1 &1420694771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,6 +1865,7 @@ GameObject:
   - component: {fileID: 1887077439}
   - component: {fileID: 1887077438}
   - component: {fileID: 1887077437}
+  - component: {fileID: 1887077441}
   m_Layer: 0
   m_Name: charVik
   m_TagString: Untagged
@@ -1907,7 +1957,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0059656426, y: -0.0022389293}
+  m_Offset: {x: 0.0059656426, y: -0.20181867}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1918,7 +1968,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24862917, y: 0.40314233}
+  m_Size: {x: 0.24862917, y: 0.004088357}
   m_EdgeRadius: 0
 --- !u!4 &1887077440
 Transform:
@@ -1928,12 +1978,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887077436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -2.62, z: 15.59}
+  m_LocalPosition: {x: -0.47, y: -2.62, z: 15.59}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1887077441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887077436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657c8d48783bf19478edb2745729c063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rndMove: 0
+  speed: 0
 --- !u!1 &1941075990
 GameObject:
   m_ObjectHideFlags: 0
