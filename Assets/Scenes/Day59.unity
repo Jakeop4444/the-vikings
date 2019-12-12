@@ -3415,6 +3415,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1487957816}
+  dialogueManager: {fileID: 306540280}
+  changeInMorale: 0
+  changeInHunger: 0
+  changeInFood: 0
 --- !u!1 &1504716358
 GameObject:
   m_ObjectHideFlags: 0
