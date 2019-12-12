@@ -6,7 +6,7 @@ using UnityEngine;
 public class MoraleController : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    public float Morale_Value;
+    public static float Morale_Value = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -19,5 +19,10 @@ public class MoraleController : MonoBehaviour
     {
         Morale_Value += value;
         text.text = "Morale: " + Morale_Value.ToString();
+    }
+    public void SetValue(float value)
+    {
+        Morale_Value = value;
+        text.text = "Hunger: " + Morale_Value.ToString();
     }
 }

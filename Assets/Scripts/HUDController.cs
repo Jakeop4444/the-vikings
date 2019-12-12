@@ -9,8 +9,8 @@ public class HUDController : MonoBehaviour
     public GameObject morale;
     public GameObject morale_text;
 
-    public GameObject resources;
-    public GameObject resources_text;
+    public GameObject hunger;
+    public GameObject hunger_text;
 
     // Start is called before the first frame update
     void Start()
@@ -26,12 +26,12 @@ public class HUDController : MonoBehaviour
         {
             //these will just disable the renderer, not deactivate object
             morale_text.SetActive(false);
-            resources.SetActive(false);
+            hunger.SetActive(false);
             if (Input.anyKey)
             {
                 modal.SetActive(false);
                 morale_text.SetActive(true);
-                resources.SetActive(true);
+                hunger.SetActive(true);
             }
         }
 
