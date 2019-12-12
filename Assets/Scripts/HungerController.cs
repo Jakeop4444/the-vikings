@@ -6,7 +6,7 @@ using UnityEngine;
 public class HungerController : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    public float Hunger_Value;
+    public static float Hunger_Value = 50;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,11 @@ public class HungerController : MonoBehaviour
     public void UpdateValue(float value)
     {
         Hunger_Value += value;
+        text.text = "Hunger: " + Hunger_Value.ToString();
+    }
+    public void SetValue(float value)
+    {
+        Hunger_Value = value;
         text.text = "Hunger: " + Hunger_Value.ToString();
     }
 }

@@ -2152,24 +2152,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 306540280}
-        m_MethodName: updateMoral
+        m_MethodName: setMoral
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 25
+          m_FloatArgument: 125
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 306540280}
-        m_MethodName: updateHunger
+        m_MethodName: setFood
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -25
+          m_FloatArgument: 125
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -2677,8 +2677,11 @@ MonoBehaviour:
   dialogue:
     name: Leif
     sentences:
-    - Today is our 7th day on the open sea, I should check how our crew is doing today.
-    - What is that in the distance?
+    - 21 days have passed since we have left Norway.
+    - Although we have been through some hardships, Christ has been keeping us alive.
+    - I feel myself becoming less associated with the Norse legends by the day.
+    - '*THUD*'
+    - What has happened to our ship!
 --- !u!114 &1302325718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,7 +2944,7 @@ Transform:
   m_Children:
   - {fileID: 417536399}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1353146826
 MonoBehaviour:
@@ -2990,12 +2993,9 @@ MonoBehaviour:
   dialogue:
     name: Priest
     sentences:
-    - Leif, unfortunately the crew and I have witnessed a ship wreck this morning.
-    - "I don\u2019t think any amount of prayer can lift this crew\u2019s sports today."
-    - "I fear for my life and I\u2019m beginning to think the norse gods have cursed
-      us for turning our backs on them."
-    - 'Pray - In the name of Christ, may this ship reach its destination safely and
-      quickly! '
+    - Leif, Praise Christ, we have landed on an Island, everyone is ecstatic!
+    - Through the power of Christ, He has delivered us safely to land, and while it
+      is not the final destination this is a sign from God!
 --- !u!1 &1404950000
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,13 +3623,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 306540280}
-        m_MethodName: updateMoral
+        m_MethodName: setHunger
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 125
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 306540280}
+        m_MethodName: setMoral
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 125
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -4654,7 +4665,7 @@ Transform:
   m_Children:
   - {fileID: 856093107}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1887077441
 MonoBehaviour:
@@ -4685,12 +4696,13 @@ MonoBehaviour:
   dialogue:
     name: Thyrker
     sentences:
-    - Leif, I think most of the crew has lost their appetite today, but I think it's
-      still important to eat.
-    - I cannot wait to be out of sight from that unfortunate wreck, my nerves will
-      only be calmed until then.
-    - As unfortunate it is that a ship has wrecked, we should still eat to keep our
-      energy up and make sure the same doesn't happen to us!
+    - Leif, good news!
+    - We have landed on an Island and it had bountiful life and vegetation.
+    - We have collected and hunted and now we have an additional 5 days worth of food!
+    - We have been celebrating since we landed!
+    - Everyone has been eating and drinking their share!
+    - 'Feast - I think we can make some room in our bellies for a few rounds of mead! '
+    - Everyone gather round, let us celebrate!
 --- !u!114 &1887077444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4867,13 +4879,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 306540280}
-        m_MethodName: updateHunger
+        m_MethodName: setMoral
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 25
+          m_FloatArgument: 125
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 306540280}
+        m_MethodName: setHunger
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 125
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

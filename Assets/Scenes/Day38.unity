@@ -2169,7 +2169,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -25
+          m_FloatArgument: -10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -2677,8 +2677,10 @@ MonoBehaviour:
   dialogue:
     name: Leif
     sentences:
-    - Today is our 7th day on the open sea, I should check how our crew is doing today.
-    - What is that in the distance?
+    - It is Day 38 at sea, we should be hitting land tomorrow, but there is no sight
+      of the Ice that covers greenland around us.
+    - I should check on my crew.
+    - Another Island, how about that!
 --- !u!114 &1302325718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,7 +2943,7 @@ Transform:
   m_Children:
   - {fileID: 417536399}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1353146826
 MonoBehaviour:
@@ -2990,12 +2992,12 @@ MonoBehaviour:
   dialogue:
     name: Priest
     sentences:
-    - Leif, unfortunately the crew and I have witnessed a ship wreck this morning.
-    - "I don\u2019t think any amount of prayer can lift this crew\u2019s sports today."
-    - "I fear for my life and I\u2019m beginning to think the norse gods have cursed
-      us for turning our backs on them."
-    - 'Pray - In the name of Christ, may this ship reach its destination safely and
-      quickly! '
+    - 'Leif, Praise God we have landed on this fruitful Island, giving us a break
+      from the torment of the sea. '
+    - You should see what Thryker is up to today, he seems excited to have landed
+      here.
+    - Pray - God bless this bountiful land and allow us to harvest and use its materials
+      to reach our destination, Amen.
 --- !u!1 &1404950000
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,7 +3631,29 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 25
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 306540280}
+        m_MethodName: updateHunger
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 50
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 306540280}
+        m_MethodName: updateFood
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 15
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -4654,7 +4678,7 @@ Transform:
   m_Children:
   - {fileID: 856093107}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1887077441
 MonoBehaviour:
@@ -4685,12 +4709,11 @@ MonoBehaviour:
   dialogue:
     name: Thyrker
     sentences:
-    - Leif, I think most of the crew has lost their appetite today, but I think it's
-      still important to eat.
-    - I cannot wait to be out of sight from that unfortunate wreck, my nerves will
-      only be calmed until then.
-    - As unfortunate it is that a ship has wrecked, we should still eat to keep our
-      energy up and make sure the same doesn't happen to us!
+    - Leif, We have landed again!
+    - This is truly a blessing from God as our rations were beginning to decrease.
+    - Look at all the materials we have been able to collect!
+    - Our Crew has been able to fill up and relax today on dry land, we are truly
+      blessed
 --- !u!114 &1887077444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4873,7 +4896,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 25
+          m_FloatArgument: 50
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -4884,7 +4907,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -1
+          m_FloatArgument: 15
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 306540280}
+        m_MethodName: updateMoral
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 25
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

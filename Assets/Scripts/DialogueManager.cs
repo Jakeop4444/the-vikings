@@ -94,4 +94,28 @@ public class DialogueManager : MonoBehaviour
         buttonFeast.SetActive(false);
         buttonNextLevel.SetActive(true);
     }
+    public void setMoral(float val)
+    {
+        moral.SetValue(val);
+        buttonPray.SetActive(false);
+        buttonTalk.SetActive(false);
+        buttonFeast.SetActive(false);
+        buttonNextLevel.SetActive(true);
+    }
+    public void setFood(float val)
+    {
+        food.SetValue(val);
+        buttonPray.SetActive(false);
+        buttonTalk.SetActive(false);
+        buttonFeast.SetActive(false);
+        buttonNextLevel.SetActive(true);
+    }
+    public void setHunger(float val)
+    {
+        hunger.SetValue(val);
+        buttonPray.SetActive(false);
+        buttonTalk.SetActive(false);
+        buttonFeast.SetActive(false);
+        buttonNextLevel.SetActive(true);
+    }
 }

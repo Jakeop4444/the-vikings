@@ -2158,7 +2158,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 25
+          m_FloatArgument: 100
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -2169,7 +2169,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -25
+          m_FloatArgument: -10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -2677,8 +2677,8 @@ MonoBehaviour:
   dialogue:
     name: Leif
     sentences:
-    - Today is our 7th day on the open sea, I should check how our crew is doing today.
-    - What is that in the distance?
+    - It is day 14 on the open sea, I should check on the crew.
+    - What is that awful smell?
 --- !u!114 &1302325718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,7 +2941,7 @@ Transform:
   m_Children:
   - {fileID: 417536399}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1353146826
 MonoBehaviour:
@@ -2990,12 +2990,16 @@ MonoBehaviour:
   dialogue:
     name: Priest
     sentences:
-    - Leif, unfortunately the crew and I have witnessed a ship wreck this morning.
-    - "I don\u2019t think any amount of prayer can lift this crew\u2019s sports today."
-    - "I fear for my life and I\u2019m beginning to think the norse gods have cursed
-      us for turning our backs on them."
-    - 'Pray - In the name of Christ, may this ship reach its destination safely and
-      quickly! '
+    - Leif, everything seems to be going wrong on this ship, last week was the shipwreck
+      and now it is the food!
+    - I remember something similar happened to us in Norway.
+    - "Then, King Olaf converted to Christianity and soon our troubles were no more!
+      \r"
+    - Pray - This is just a sign of things to come!
+    - "I pray to you, O\u2019 Christ, you have helped King Olaf and the Kingdom of
+      Norway overcome the plague, please guide us through these trying times and deliver
+      us from evil."
+    - Amen.
 --- !u!1 &1404950000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4654,7 +4658,7 @@ Transform:
   m_Children:
   - {fileID: 856093107}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1887077441
 MonoBehaviour:
@@ -4685,12 +4689,15 @@ MonoBehaviour:
   dialogue:
     name: Thyrker
     sentences:
-    - Leif, I think most of the crew has lost their appetite today, but I think it's
-      still important to eat.
-    - I cannot wait to be out of sight from that unfortunate wreck, my nerves will
-      only be calmed until then.
-    - As unfortunate it is that a ship has wrecked, we should still eat to keep our
-      energy up and make sure the same doesn't happen to us!
+    - Leif, the food has gone bad!
+    - "I don\u2019t think we have enough rations for everyone to feast today."
+    - We should save our supply as much as possible.
+    - It's unfortunate that this has happened so early in our journey, but we should
+      keep our heads held high!
+    - "Feast - Even though a couple day\u2019s worth of food has gone bad, I should
+      have enough food for everyone to eat a small share."
+    - "I feel like our crew\u2019s stomachs will not be filled due to that awful rotting
+      smell making us lose our appetites."
 --- !u!114 &1887077444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4873,7 +4880,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 25
+          m_FloatArgument: 10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

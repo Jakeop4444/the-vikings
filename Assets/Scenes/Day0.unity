@@ -497,7 +497,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 258
+  m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -1262,7 +1262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &652162976
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1578,7 +1578,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
-  Morale_Value: 100
 --- !u!1 &835420305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,7 +2833,6 @@ GameObject:
   - component: {fileID: 1353146823}
   - component: {fileID: 1353146822}
   - component: {fileID: 1353146826}
-  - component: {fileID: 1353146827}
   - component: {fileID: 1353146829}
   - component: {fileID: 1353146828}
   m_Layer: 0
@@ -2970,21 +2968,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rndMove: 0
   speed: 0
---- !u!114 &1353146827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353146821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a6429c47e307a349ab9406284319b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences: []
 --- !u!114 &1353146828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3656,7 +3639,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 25
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -4086,7 +4069,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
-  Hunger_Value: 50
 --- !u!1 &1786799776
 GameObject:
   m_ObjectHideFlags: 0
@@ -4235,7 +4217,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
-  Food_Value: 50
 --- !u!1 &1817163839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4564,7 +4545,6 @@ GameObject:
   - component: {fileID: 1887077438}
   - component: {fileID: 1887077437}
   - component: {fileID: 1887077441}
-  - component: {fileID: 1887077442}
   - component: {fileID: 1887077444}
   - component: {fileID: 1887077443}
   m_Layer: 0
@@ -4700,21 +4680,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rndMove: 0
   speed: 0
---- !u!114 &1887077442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887077436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a6429c47e307a349ab9406284319b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences: []
 --- !u!114 &1887077443
 MonoBehaviour:
   m_ObjectHideFlags: 0
