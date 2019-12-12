@@ -8,16 +8,16 @@ public class EventController : MonoBehaviour
     public float MoraleEdit;
     public float ResourcesEdit;
     public MoraleController Moraleo;
-    public ResourceController Resourceo;
+    public HungerController Hungero;
 
     // Start is called before the first frame update
     void Start()
     {
         Moraleo = this.transform.parent.GetComponentInChildren<MoraleController>();
-        Resourceo = this.transform.parent.GetComponentInChildren<ResourceController>();
+        Hungero = this.transform.parent.GetComponentInChildren<HungerController>();
 
         Moraleo.UpdateValue(MoraleEdit);
-        Resourceo.UpdateValue(ResourcesEdit);
+        Hungero.UpdateValue(ResourcesEdit);
     }
 
 }

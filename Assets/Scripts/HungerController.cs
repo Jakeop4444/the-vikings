@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ResourceController : MonoBehaviour
+public class HungerController : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    public float Resource_Value;
+    public float Hunger_Value;
 
     // Start is called before the first frame update
     void Start()
     {
         text = this.transform.GetComponentInChildren<TextMeshProUGUI>();
-        text.text = "Resources: " + Resource_Value.ToString();
+        text.text = "Hunger: " + Hunger_Value.ToString();
     }
 
     public void UpdateValue(float value)
     {
-        Resource_Value += value;
-        text.text = "Resources: " + Resource_Value.ToString();
+        Hunger_Value += value;
+        text.text = "Hunger: " + Hunger_Value.ToString();
     }
 }

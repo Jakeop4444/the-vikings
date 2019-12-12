@@ -8,6 +8,7 @@ public class charRNDMovement : MonoBehaviour
     public bool rndMove;
     public float speed;
     GameObject character;
+    GameObject charLeif;
     IEnumerator coroutine;
 
     void Start()
@@ -15,6 +16,7 @@ public class charRNDMovement : MonoBehaviour
         rndMove = true;
         speed = 8.0f;
         character = this.gameObject;
+        charLeif = GameObject.Find("charLeif");
         coroutine = rndCharMove();
         StartCoroutine(coroutine);
     }
@@ -43,14 +45,17 @@ public class charRNDMovement : MonoBehaviour
                 character.GetComponent<SpriteRenderer>().flipX = true;
             }
             character.transform.position = tempPos;
-            Debug.Log(this.gameObject.name + ": " + direction);
+            //Debug.Log(this.gameObject.name + ": " + direction);
             yield return new WaitForSecondsRealtime(1);
         }
         yield return new WaitForSecondsRealtime(1);
     }
 
-    private void OnMouseDown()
+    void OnMouseDown()
     {
-        
+        Debug.Log(this.gameObject.name);
+        Vector2 myPos = character.transform.position;
+        charLeif.GetComponent<leifScript>().StartLerping(myPos);
+        StopCoroutine(coroutine);
     }
 }

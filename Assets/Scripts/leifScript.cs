@@ -26,7 +26,9 @@ public class leifScript : MonoBehaviour
     {
         if (shouldLerp)
         {
+            Debug.Log("startpos: " + startPos.ToString() + "endpos: " + endPos.ToString() + "time: " + timeStartedLerping.ToString() + "lerp: " + lerpTime.ToString());
             transform.position = Lerp(startPos, endPos, timeStartedLerping, lerpTime);
+            //shouldLerp = false;
         }
     }
 
@@ -37,12 +39,13 @@ public class leifScript : MonoBehaviour
         shouldLerp = true;
     }
 
-    public Vector3 Lerp(Vector3 start, Vector3 end, float timeStartedLerping, float lerpTime = 3)
+    public Vector3 Lerp(Vector3 start, Vector3 end, float timeStartedLerping, float lerpTime = 3.0f)
     {
+        lerpTime = 3.0f;
         float timeSinceStarted = Time.time - timeStartedLerping;
         float percentageComplete = timeSinceStarted / lerpTime;
+        //Debug.Log("Start: " + start.ToString() + "end: " + end.ToString());
         var result = Vector3.Lerp(start, end, percentageComplete);
-        shouldLerp = false;
         return result;
     }
 
