@@ -14,7 +14,14 @@ public class LevelChangerScript : MonoBehaviour
 
     public void FadeToNextLevel()
     {
-        FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
+        if(dialogueManager.moral.getValue() < 0 || dialogueManager.hunger.getValue() < 0 || dialogueManager.food.getValue() < 0)
+        {
+            FadeToLevel(9);
+        }
+        else
+        {
+            FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     public void FadeToLevel(int levelIndex)

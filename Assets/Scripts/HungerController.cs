@@ -25,4 +25,8 @@ public class HungerController : MonoBehaviour
         Hunger_Value = value;
         text.text = "Hunger: " + Hunger_Value.ToString();
     }
+    public float getValue()
+    {
+        return Hunger_Value;
+    }
 }
