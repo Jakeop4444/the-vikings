@@ -25,4 +25,9 @@ public class MoraleController : MonoBehaviour
         Morale_Value = value;
         text.text = "Hunger: " + Morale_Value.ToString();
     }
+
+    public float getValue()
+    {
+        return Morale_Value;
+    }
 }
