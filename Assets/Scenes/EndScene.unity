@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 173245006}
   - component: {fileID: 173245004}
   - component: {fileID: 173245003}
+  - component: {fileID: 173245005}
   m_Layer: 0
   m_Name: charLeif
   m_TagString: Untagged
@@ -469,6 +470,25 @@ MonoBehaviour:
   buttonTalk: {fileID: 1490536200}
   dialogueTrigger: {fileID: 173245003}
   clicked: 0
+--- !u!95 &173245005
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173245002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43555dc332a7cb84094d0772f39370d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &173245006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3144,6 +3164,7 @@ GameObject:
   - component: {fileID: 1486657669}
   - component: {fileID: 1486657668}
   - component: {fileID: 1486657667}
+  - component: {fileID: 1486657672}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
@@ -3293,6 +3314,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1486657672
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486657666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 669397c8e383f4742b0aeda9c7922866, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1490536200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3436,6 +3476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1520496887}
   - component: {fileID: 1520496886}
+  - component: {fileID: 1520496888}
   m_Layer: 0
   m_Name: BG
   m_TagString: Untagged
@@ -3506,6 +3547,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1520496888
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520496885}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7957b5f717dfce4397f6fe2f48c4d81, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1614803509
 GameObject:
   m_ObjectHideFlags: 0
