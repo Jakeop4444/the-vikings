@@ -3222,9 +3222,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1541690821}
   dialogueManager: {fileID: 1475167991}
-  changeInMorale: 25
-  changeInHunger: 0
-  changeInFood: 50
+  changeInMorale: -25
+  changeInHunger: -25
+  changeInFood: -9
 --- !u!95 &1541690821
 Animator:
   serializedVersion: 3

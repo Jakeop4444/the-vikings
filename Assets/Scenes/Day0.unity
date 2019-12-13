@@ -3424,8 +3424,8 @@ MonoBehaviour:
   animator: {fileID: 1487957816}
   dialogueManager: {fileID: 306540280}
   changeInMorale: -25
-  changeInHunger: 0
-  changeInFood: -25
+  changeInHunger: -25
+  changeInFood: -7
 --- !u!1 &1504716358
 GameObject:
   m_ObjectHideFlags: 0
