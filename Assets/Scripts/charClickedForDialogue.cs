@@ -21,12 +21,6 @@ public class charClickedForDialogue : MonoBehaviour
         child.GetComponent<TextMeshPro>().fontStyle = FontStyles.Bold;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnMouseDown()
     {
         if (!clicked)
@@ -35,7 +29,7 @@ public class charClickedForDialogue : MonoBehaviour
             clicked = true;
             var child = character.transform.GetChild(0);
             child.GetComponent<TextMeshPro>().text = "";
-            if(character.name == "charPriest")
+            /*if(character.name == "charPriest")
             {
                 buttonPray.SetActive(true);
                 buttonTalk.SetActive(true);
@@ -43,7 +37,7 @@ public class charClickedForDialogue : MonoBehaviour
             else if(character.name == "charThyrker")
             {
                 buttonFeast.SetActive(true);
-            }
+            }*/
         }
     }
 }

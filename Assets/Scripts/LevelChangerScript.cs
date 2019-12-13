@@ -11,20 +11,6 @@ public class LevelChangerScript : MonoBehaviour
     public float changeInMorale;
     public float changeInHunger;
     public float changeInFood;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /*(if (Input.GetKeyDown(KeyCode.Space))
-        {
-            FadeToNextLevel();
-        }*/
-    }
 
     public void FadeToNextLevel()
     {
@@ -39,11 +25,18 @@ public class LevelChangerScript : MonoBehaviour
 
     public void OnFadeComplete()
     {
-        dialogueManager.updateMoral(changeInMorale);
-        dialogueManager.updateHunger(changeInHunger);
-        dialogueManager.updateFood(changeInFood);
-        SceneManager.LoadScene(levelToLoad);
+        if (SceneManager.GetActiveScene().name == "Title")
+        {
+            SceneManager.LoadScene(levelToLoad);
+        }
+        else
+        {
+            dialogueManager.updateMoral(changeInMorale);
+            dialogueManager.updateHunger(changeInHunger);
+            dialogueManager.updateFood(changeInFood);
+            SceneManager.LoadScene(levelToLoad);
+        }
+        
     }
 
-    
 }

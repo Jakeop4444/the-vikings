@@ -31,6 +31,10 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        buttonPray.SetActive(false);
+        buttonTalk.SetActive(false);
+        buttonFeast.SetActive(false);
+        buttonNextLevel.SetActive(false);
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
         sentences.Clear();
@@ -67,6 +71,16 @@ public class DialogueManager : MonoBehaviour
     {
         //Debug.Log("end of conversation");
         animator.SetBool("IsOpen", false);
+        if (nameText.text == "Priest")
+        {
+            buttonPray.SetActive(true);
+            buttonTalk.SetActive(true);
+        } else if (nameText.text == "Thyrker")
+        {
+            buttonFeast.SetActive(true);
+        }
+
+        buttonNextLevel.SetActive(true);
 
     }
 
